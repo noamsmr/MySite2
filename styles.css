@@ -1,0 +1,36 @@
+:root {
+    --body-margin: 30vw;
+}
+
+.body {
+    margin: 8rem var(--body-margin);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.margin-remove {
+    margin: 0 calc(-1 * var(--body-margin));
+}
+
+.clickable {
+    user-select: none;
+}
+
+.clickable:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+
+.hidden-content {
+    display: none;
+}
+
+.hide-load {
+    position: absolute;
+    top: -9999999999px;
+    visibility: hidden;
+    opacity: 0;
+}
