@@ -1,13 +1,28 @@
+@font-face {
+    font-family: haim;
+    src: url(HAIRLRG_.TTF);
+}
+
 :root {
     --body-margin: 30vw;
 }
 
 .body {
     margin: 8rem var(--body-margin);
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
     font-size: 18px;
     font-weight: bold;
     text-align: center;
+}
+
+.page-border {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 3vh solid black;
+    pointer-events: none;
 }
 
 .margin-remove {

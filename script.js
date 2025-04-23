@@ -1,4 +1,4 @@
-function onClickPrograming(id) {
+function onClickHeader(id) {
     var element = document.getElementById(id);
     if (element.style.display === "block") {
         element.style.display = "none";
