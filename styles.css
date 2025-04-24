@@ -73,13 +73,13 @@
 .right-border {
     width: 3vh;
     top: 0;
-    bottom: 0;
+    bottom: -200px;
     right: 0;
 }
 
 .left-border {
     width: 3vh;
     top: 0;
-    bottom: 0;
+    bottom: -200px;
     left: 0;
 }
