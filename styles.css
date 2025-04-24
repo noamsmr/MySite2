@@ -23,9 +23,11 @@
     user-select: none;
 }
 
-.clickable:hover {
-    background-color: orange;
-    cursor: pointer;
+@media (hover: hover), (-ms-high-contrast:none) {
+    .clickable:hover {
+        background-color: orange;
+        cursor: pointer;
+    }
 }
 
 .hidden-content {
@@ -38,6 +40,7 @@
     left: 0;
     right: 0;
     height: calc(6vh + 3rem);
+    border-top: 5px dotted black;
     padding: 0 var(--body-margin);
     background-color: white;
 }

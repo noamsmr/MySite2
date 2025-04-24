@@ -1,5 +1,10 @@
 var contactOpen = false;
+const bodyMarginBottomREM = 8;
 const contactDeltaHeight = 160;
+
+function convertRemToPixels(rem) {    
+    return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+}
 
 function onClickHeader(id) {
     var element = document.getElementById(id);
@@ -11,13 +16,21 @@ function onClickHeader(id) {
 }
 
 function onClickContact() {
-    var element = document.getElementById('footer');
+    var footerEl = document.getElementById('footer');
+    var bodyEl = document.getElementById('body');
+    
+    console.log(bodyEl.style.marginBottom);
+    
     if (contactOpen) {
-        element.style.height = (element.offsetHeight - contactDeltaHeight) + "px";
+        footerEl.style.height = (footerEl.clientHeight - contactDeltaHeight) + "px";
+        bodyEl.style.marginBottom = convertRemToPixels(bodyMarginBottomREM) + "px";
     } else {
-        element.style.height = (element.offsetHeight + contactDeltaHeight) + "px";
+        footerEl.style.height = (footerEl.clientHeight + contactDeltaHeight) + "px";
+        bodyEl.style.marginBottom = convertRemToPixels(bodyMarginBottomREM) + contactDeltaHeight + "px";
     }
+
     contactOpen = !contactOpen;
+
     var element = document.getElementById('contact');
     if (element.style.display === "block") {
         element.style.display = "none";
