@@ -9,7 +9,7 @@
 
 .body {
     margin: 8rem var(--body-margin);
-    /* font-family: 'Courier New', Courier, monospace; */
+    /* font-family: haim, 'Courier New', Courier, monospace; */
     font-size: 18px;
     font-weight: bold;
     text-align: center;
@@ -51,22 +51,35 @@
     width: 30px;
 }
 
-.buttom-border {
+.div-border {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 3vh;
     background-color: black;
 }
 
-.page-border {
-    position: fixed;
+.top-border {
+    height: 3vh;
     top: 0;
+    left: 0;
+    right: 0;
+}
+
+.buttom-border {
+    height: 3vh;
     bottom: 0;
     left: 0;
     right: 0;
-    border: 3vh solid black;
-    border-bottom: none;
-    pointer-events: none;
+}
+
+.right-border {
+    width: 3vh;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.left-border {
+    width: 3vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
 }
