@@ -4,7 +4,7 @@
 }
 
 :root {
-    --body-margin: 30vw;
+    --body-margin: 27vw;
 }
 
 .body {
@@ -13,17 +13,6 @@
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-}
-
-.page-border {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border: 3vh solid black;
-    outline: 100vh solid black;
-    pointer-events: none;
 }
 
 .margin-remove {
@@ -39,7 +28,40 @@
     cursor: pointer;
 }
 
-
 .hidden-content {
     display: none;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(6vh + 3rem);
+    padding: 0 var(--body-margin);
+    background-color: white;
+}
+
+.email-link {
+    font-size: 20px;
+}
+
+.social-container {
+    /* padding: 1rem; */
+}
+
+.social-icon {
+    height: 30px;
+    width: 30px;
+}
+
+.page-border {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 3vh solid black;
+    outline: 100vh solid black;
+    pointer-events: none;
 }
