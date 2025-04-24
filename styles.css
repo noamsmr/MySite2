@@ -46,13 +46,18 @@
     font-size: 20px;
 }
 
-.social-container {
-    /* padding: 1rem; */
-}
-
 .social-icon {
     height: 30px;
     width: 30px;
+}
+
+.buttom-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3vh;
+    background-color: black;
 }
 
 .page-border {
@@ -62,6 +67,6 @@
     left: 0;
     right: 0;
     border: 3vh solid black;
-    outline: 100vh solid black;
+    border-bottom: none;
     pointer-events: none;
 }
