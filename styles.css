@@ -22,6 +22,7 @@
     left: 0;
     right: 0;
     border: 3vh solid black;
+    outline: 100vh solid black;
     pointer-events: none;
 }
 
@@ -41,11 +42,4 @@
 
 .hidden-content {
     display: none;
-}
-
-.hide-load {
-    position: absolute;
-    top: -9999999999px;
-    visibility: hidden;
-    opacity: 0;
 }
