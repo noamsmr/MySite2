@@ -51,6 +51,11 @@
     width: 30px;
 }
 
+.spotify-icon {
+    height: 31px;
+    width: 31px;
+}
+
 .div-border {
     position: fixed;
     background-color: black;
