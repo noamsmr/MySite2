@@ -39,7 +39,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: calc(6vh + 3rem);
+    height: calc(3vh + 4.33em);
     border-top: 5px dotted black;
     padding: 0 var(--body-margin);
     background-color: white;
